@@ -1,70 +1,69 @@
 {
-  "id": "token-attacher",
-  "title": "Token Attacher",
-  "description": "Attach anything(even tokens) to tokens, so that they move when the token moves and rotate/move when the token rotates. Create prefabs and many more features, see the github readme for more details.",
-  "version": "5.0.0",
-  "compatibility": {
-    "minimum": 13,
-    "verified": 13,
-    "maximum": 13
-  },
-  "authors": [
-    {
-      "name": "mkniller",
-      "url": "https://github.com/mkniller",
-      "discord": "TwistedTri"
-    }
-  ],
-  "relationships": {
-    "requires": [
+	"id": "token-attacher",
+	"title": "Token Attacher",
+	"description": "Attach anything(even tokens) to tokens, so that they move when the token moves and rotate/move when the token rotates. Create prefabs and many more features, see the github readme for more details.",
+	"version": "4.6.11",
+	"compatibility" :{
+		"minimum": 12,	
+		"verified": 12,
+		"maximum": 12	
+	},
+	"authors": [
+		{
+			"name": "KayelGee",
+			"url": "https://github.com/KayelGee",
+			"discord": "KayelGee#5241"
+		}
+	],
+	"relationships":{
+		"requires": [{
+      "id": "lib-wrapper",
+      "type": "module",
+      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+    }]
+	},
+	"esmodules": [
+		"scripts/token-attacher.js",
+		"scripts/compatiblity/levels.js",
+		"scripts/compatiblity/wall-height.js",
+		"scripts/compatiblity/enhanced-terrain-layer.js",
+		"scripts/compatiblity/core.js"
+	],
+	"styles": [
+		"./css/token-attacher.css"],
+	"packs": [
       {
-        "id": "lib-wrapper",
-        "type": "module",
-        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+          "name": "example-macros",
+          "label": "(TA)Example Macros",
+          "path": "packs/example-macros",
+          "type": "Macro"
       }
-    ]
-  },
-  "esmodules": [
-    "scripts/token-attacher.js",
-    "scripts/compatiblity/levels.js",
-    "scripts/compatiblity/wall-height.js",
-    "scripts/compatiblity/enhanced-terrain-layer.js",
-    "scripts/compatiblity/core.js"
-  ],
-  "styles": ["./css/token-attacher.css"],
-  "packs": [
-    {
-      "name": "example-macros",
-      "label": "(TA)Example Macros",
-      "path": "packs/example-macros",
-      "type": "Macro"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		},
+		{
+			"lang": "ko",
+			"name": "Korean",
+			"path": "languages/ko.json"
+		},
+		{
+			"lang": "ja",
+			"name": "日本語",
+			"path": "languages/ja.json"
+    },
+		{
+			"lang": "es",
+			"name": "Español",
+			"path": "languages/es.json"
     }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    },
-    {
-      "lang": "ko",
-      "name": "Korean",
-      "path": "languages/ko.json"
-    },
-    {
-      "lang": "ja",
-      "name": "日本語",
-      "path": "languages/ja.json"
-    },
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "languages/es.json"
-    }
-  ],
-  "socket": true,
-  "url": "https://github.com/mkniller/token-attacher",
-  "manifest": "https://raw.githubusercontent.com/mkniller/token-attacher/master/module.json",
-  "download": "https://github.com/mkniller/token-attacher/releases/latest/download/token-attacher.zip",
-  "readme": "https://raw.githubusercontent.com/mkniller/token-attacher/master/README.md"
+	],
+	"socket": true,
+	"url": "https://github.com/KayelGee/token-attacher",
+  "manifest": "https://raw.githubusercontent.com/KayelGee/token-attacher/master/module.json",
+  "download": "https://github.com/KayelGee/token-attacher/releases/latest/download/token-attacher.zip",
+  "readme": "https://raw.githubusercontent.com/KayelGee/token-attacher/master/README.md"
 }
